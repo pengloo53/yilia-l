@@ -2,8 +2,10 @@
   <%if(post.noDate != "true"){%>
     <div class="article-meta">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-      <%- partial('post/category') %>
-      <%- partial('post/tag') %>
+
+<!--  首页要分类标签，而其他页不显示分类标签 <%- partial('post/category') %>
+      
+     <%- partial('post/tag') %>
     </div>
   <%}%>
   <div class="article-inner">
