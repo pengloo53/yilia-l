@@ -1,9 +1,6 @@
 var Tips = (function(){
-
 	var $tipBox = $(".tips-box");
-
 	var bind = function(){
-
 	}
 
 	bind();
@@ -15,13 +12,11 @@ var Tips = (function(){
 			$tipBox.addClass("hide");
 		},
 		init: function(){
-			
 		}
 	}
 })();
 
 var Main = (function(){
-
 	var resetTags = function(){
 		var tags = $(".tagcloud a");
 		tags.css({"font-size": "12px"});
@@ -31,7 +26,6 @@ var Main = (function(){
 			tags.eq(i).addClass("color"+num);
 		}
 	}
-
 	var slide = function(idx){
 		var $wrap = $(".switch-wrap");
 		$wrap.css({
@@ -40,7 +34,6 @@ var Main = (function(){
 		$(".icon-wrap").addClass("hide");
 		$(".icon-wrap").eq(idx).removeClass("hide");
 	}
-
 	var bind = function(){
 		var switchBtn = $("#myonoffswitch");
 		var tagcloud = $(".second-part");
@@ -57,11 +50,9 @@ var Main = (function(){
 				resetTags();
 			}
 		});
-
 		var timeout;
 		var isEnterBtn = false;
 		var isEnterTips = false;
-
 		$(".icon").bind("mouseenter", function(){
 			isEnterBtn = true;
 			Tips.show();
@@ -105,7 +96,6 @@ var Main = (function(){
 			$(".article-inner .fancy-ctn").fancybox();
 		}
 	}
-
 	return {
 		init: function(){
 			resetTags();

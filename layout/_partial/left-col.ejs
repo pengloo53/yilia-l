@@ -37,7 +37,6 @@
 						</div>
 						<%}%>
 					</div>
-					
 				</div>
 				<div class="tips-box hide">
 					<div class="tips-arrow"></div>
@@ -45,10 +44,10 @@
 						<li>菜单</li>
 						<li>标签</li>
 						<%if(theme.friends && theme.friends.length != 0){%>
-						<li>友情链接</li>
+							<li>友情链接</li>
 						<%}%>
 						<%if(theme.aboutme){%>
-						<li>关于我</li>
+							<li>关于我</li>
 						<%}%>
 					</ul>
 				</div>
@@ -62,7 +61,7 @@
 						<ul>
 						<% for (var i in theme.menu){ %>
 							<li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-				        <%}%>
+				       		<%}%>
 						</ul>
 					</nav>
 					<nav class="header-nav">
@@ -85,17 +84,17 @@
 				<%if(theme.friends && theme.friends.length != 0){%>
 				<section class="switch-part switch-part3">
 					<% for (var i in theme.friends){ %>
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="<%- url_for(theme.friends[i]) %>"><%= i %></a>
-			        <% } %>
+			          		<a target="_blank" class="main-nav-link switch-friends-link" href="<%- url_for(theme.friends[i]) %>"><%= i %></a>
+			        		<% } %>
 				</section>
 				<%}%>
 
 				<%if(theme.aboutme){%>
-				<%if(!theme.friends){%>
-				<section class="switch-part switch-part3">
-				<%}else{%>
-				<section class="switch-part switch-part4">
-				<%}%>
+					<%if(!theme.friends){%>
+						<section class="switch-part switch-part3">
+					<%}else{%>
+						<section class="switch-part switch-part4">
+					<%}%>
 					<%=theme.aboutme%>
 				</section>
 				<%}%>

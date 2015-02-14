@@ -3,8 +3,10 @@ menu:
   主页: /
   #所有文章: /archives
   技术相关: /categories/技术
+  Node Web: /tags/Node-Web
+  Linux: /tags/Linux
   随笔: /categories/随笔
-  互联网体验: /categories/体验
+  #互联网体验: /categories/体验
 
 # SubNav
 subnav:
@@ -27,23 +29,24 @@ google_analytics:
 favicon: /favicon.png
 
 #你的头像
-avatar: "/img/avatar/Head001.png"
+avatar: "/img/avatar/Head001.jpg"
 #是否开启分享
 share: true
 #是否开启多说评论，填写你在多说申请的项目名称
 duoshuo: pengloo53 
+
 #是否开启云标签
-tagcloud: true
+tagcloud: false
 
 #是否开启友情链接
 #不开启——
-#friends: false
+friends: false
 #开启——
-friends:
-    私库卡-助力移动互联: http://www.sikuka.com
+#friends:
+    #私库卡-助力移动互联: http://www.sikuka.com
 
 #是否开启“关于我”。
 #不开启——
 aboutme: false
 #开启——
-# aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+#aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
