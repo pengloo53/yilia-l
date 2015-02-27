@@ -13,7 +13,7 @@
 		<p class="header-subtitle"><%=theme.subtitle%></p>
 		<%}%>
 
-		<%if(theme.tagcloud){%>
+<!-- 		<%if(theme.tagcloud){%>
 			<div class="switch-btn">
 				<div class="icon">
 					<div class="icon-ctn">
@@ -52,18 +52,11 @@
 					</ul>
 				</div>
 			</div>
-		<%}%>
+		<%}%> -->
 
 		<div class="switch-area">
 			<div class="switch-wrap">
 				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						<% for (var i in theme.menu){ %>
-							<li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-				       		<%}%>
-						</ul>
-					</nav>
 					<nav class="header-nav">
 						<div class="social">
 							<% for (var i in theme.subnav){ %>
@@ -71,6 +64,14 @@
 					        <%}%>
 						</div>
 					</nav>
+					<nav class="header-menu">
+						<ul>
+						<% for (var i in theme.menu){ %>
+							<li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+				       		<%}%>
+						</ul>
+					</nav>
+					
 				</section>
 				
 				<%if(theme.tagcloud){%>
