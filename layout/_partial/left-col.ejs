@@ -1,4 +1,4 @@
-<div class="overlay"></div>
+<!-- <div class="overlay"></div>  -->
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<div class="profilepic">
@@ -53,53 +53,37 @@
 				</div>
 			</div>
 		<%}%> -->
+		<div class="social" >
+			<nav class="header-nav">
+				<% for (var i in theme.subnav){ %>
+					<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" 	title="<%= i %>"><%= i %></a>
+				 <%}%>
+			</nav>
+		</div>
+		<div class="panel-bd">
+			<p>》Categories</p>
+			<ul class="header-menu">
+				<% for (var i in theme.menu){ %>
+					<a href="<%- url_for(theme.menu[i]) %>"><li><%= i %></li></a>
+				<%}%>
+			</ul>
 
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-nav">
-						<div class="social">
-							<% for (var i in theme.subnav){ %>
-								<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><%= i %></a>
-					        <%}%>
-						</div>
-					</nav>
-					<nav class="header-menu">
-						<ul>
-						<% for (var i in theme.menu){ %>
-							<li><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
-				       		<%}%>
-						</ul>
-					</nav>
-					
-				</section>
-				
+		</div>
+		<div class="panel-bd">
+			<p>》Archive</p>
+			<ul class="header-menu">
+				      <%- list_archives() %>
+			</ul>
+		</div>
+<!-- 		<div class="panel-bd">
+			<p>》Tags</p>
+			<ul class="header-menu">
 				<%if(theme.tagcloud){%>
-				<section class="switch-part switch-part2">
 					<div class="widget tagcloud">
 						<%- tagcloud() %>
 					</div>
-				</section>
 				<%}%>
-				
-				<%if(theme.friends && theme.friends.length != 0){%>
-				<section class="switch-part switch-part3">
-					<% for (var i in theme.friends){ %>
-			          		<a target="_blank" class="main-nav-link switch-friends-link" href="<%- url_for(theme.friends[i]) %>"><%= i %></a>
-			        		<% } %>
-				</section>
-				<%}%>
-
-<!-- 				<%if(theme.aboutme){%>
-					<%if(!theme.friends){%>
-						<section class="switch-part switch-part3">
-					<%}else{%>
-						<section class="switch-part switch-part4">
-					<%}%>
-					<%=theme.aboutme%>
-				</section>
-				<%}%> -->
-			</div>
-		</div>
+			</ul>
+		</div> -->
 	</header>				
 </div>

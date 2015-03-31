@@ -4,9 +4,9 @@ menu:
   所有文章: /archives
   技术相关: /categories/技术
   Node: /tags/Node
-  #Linux: /tags/Linux
+  Linux: /tags/Linux
   随笔: /categories/随笔
-  #互联网体验: /categories/体验
+  互联网体验: /categories/体验
 
 # SubNav
 subnav:
