@@ -6,6 +6,7 @@
   background: #fff;
   img{
     max-width: 100%;
+    max-height: 400px;
   }
 }
 
@@ -185,32 +186,39 @@
   top: 0;
   height: 100%;
   text-align: center;
+
   .article-date{
-    font-size: 20px;
-    color: #fff;
+    font-size: 16px;
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
     width: 60px;
-    height: 60px;
-    background: #88acdb;
+    height: 40px;
+/*    background: #88acdb;*/
+    border: solid 2px #ddd;
     border-radius: 50%;
     text-align: center;
-    line-height: 29px;
     margin: 30px;
     -webkit-transition: background 0.5s;
     -moz-transition: background 0.5s;
     -o-transition: background 0.5s;
     transition: background 0.5s;
+    color: #666;
     &:hover{
-      background: #4d4d4d;
+      background: #666;
+      color: #fff;
+      cursor: pointer;
     }
-    time{
+    p{
+      text-align: center;
+      margin-top:12px;
+    }
+/*    time{
       width: 40px;
       display: block;
       margin: 0 auto;
-    }
+    }*/
   }
   .article-tag-list{
     vertical-align: middle;
