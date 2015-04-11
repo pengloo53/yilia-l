@@ -1,6 +1,6 @@
 .article {
   margin: 30px 40px 30px 40px;
-  padding: 30px 75px 30px 40px;
+  padding: 30px 125px 30px 40px;
   position: relative;
   border-bottom: 1px solid #ddd;
   background: #fff;
@@ -179,7 +179,7 @@
 }
 
 .article-meta{
-  width: 150px;
+  width: 200px;
   font-size: 0.8em;
   text-align: right;
   position: absolute;
@@ -187,32 +187,35 @@
   top: 0;
   height: 100%;
   text-align: center;
+
   .article-date{
     font-size: 20px;
-    color: #fff;
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
-    width: 60px;
-    height: 60px;
-    background: #88acdb;
-    border-radius: 50%;
+/*    border-radius: 50%;*/
     text-align: center;
-    line-height: 29px;
     margin: 30px;
+    padding: 8px;
+    text-decoration: underline;
+    font-style: italic;
+
     -webkit-transition: background 0.5s;
     -moz-transition: background 0.5s;
     -o-transition: background 0.5s;
     transition: background 0.5s;
+    color: #666;
     &:hover{
-      background: #4d4d4d;
+      background: #666;
+      color: #fff;
+      cursor: pointer;
     }
-    time{
+/*    time{
       width: 40px;
       display: block;
       margin: 0 auto;
-    }
+    }*/
   }
   .article-tag-list{
     vertical-align: middle;
@@ -228,11 +231,11 @@
       position: absolute;
       margin-right: 10px;
       font: 14px FontAwesome;
-      left: 40px;
+      left: 65px;
     }
     .article-tag-list-item {
       width: 83px;
-      padding-left: 27px;
+      padding-left: 55px;
       text-align: left;
       display: block;
       overflow: hidden;
@@ -254,6 +257,7 @@
       clear: both;
     }
   }
+
   .article-category{
     text-align: left;
     vertical-align: middle;
